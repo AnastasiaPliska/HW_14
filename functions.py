@@ -55,9 +55,6 @@ def get_cast(actor1, actor2):
             actors_list.append(key)
     return actors_list
 
-# print(get_cast('Jack Black', 'Dustin Hoffman'))
-# print(get_cast('Rose McIver', 'Ben Lamb'))
-
 
 def get_film_list(type, release_year, genre):
     query = f"""
@@ -77,4 +74,3 @@ def get_film_list(type, release_year, genre):
         response.append(line_dict)
     return json.dumps(response)
 
-print(get_film_list('Movie', '2021', 'Comedies'))
